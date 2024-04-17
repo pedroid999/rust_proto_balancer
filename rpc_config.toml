@@ -1,0 +1,14 @@
+[proto_balancer]
+address = "127.0.0.1:4444"
+log_level = "info"
+# Size of the statistics vector
+stats_vec_size = 1000
+# Algorithm to sort node priorities
+algo = "min_latency" # min_latency, round_robin, TODO: broadcast
+
+[rpc-node]
+# RPC url
+url = "RPC URL"
+ws_url = "wss://rpc-url"
+chain_id =10 # Optimism
+rpc_location = "External"
